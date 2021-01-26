@@ -7,6 +7,6 @@ What's even better is that you can connect with your friends and draw together!
 Click here to check it out -> 
 https://lets-doodle.herokuapp.com/
 
-Technologies used : Html,CSS ,nodeJS ,socket.io
+Technologies used : Html, CSS, nodeJS, socket.io
 
 Deployed on heroku 
