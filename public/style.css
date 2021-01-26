@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tools-content{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tools{
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 25%);
+    border-radius: 22px;
+    display: flex;
+    height: 80%;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tool{
+    height: 77px;
+    width: 80px;
+    position: relative;
+}
+
+.tool img{
+    height: 100%;
+    width: 70%;
+}
+
+#canvas{
+
+}
+
+.tool-options{
+
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+height: 100px;
+width: 136px;
+border-radius: 17px;
+background: lightblue;
+left: -34px;
+top: 72px;
+position: absolute;
+
+}
+
+.pencil-colors{
+    display:flex ;
+    width: 100%;
+      justify-content: space-evenly;
+}
+
+.pencil-colors div
+{height: 25px;width: 25px;
+    border-radius: 50%;}
+
+.black{
+ background-color: black;
+}
+.red{
+background-color: red;
+}
+.blue{
+background-color: blue;
+}
+.yellow{
+background-color: yellow;
+}
+
+.hide{
+ visibility: hidden; 
+}
+
+.active-tool{ 
+background: lightgray;    
+border-radius: 51px;
+height: 70px;
+ width: 70px;
+ padding-left: 12px;
+}
+
+.sticky{
+    position: absolute;
+    height: 177px;
+    width: 190px;
+    top: 269px;
+    left: 324px;
+    }
+    
+    .sticky-content{
+    height: 85%;
+    }
+    
+    .sticky-nav{
+    background: lightblue;
+    height: 15%;
+    width: 100%;
+    display: flex;    
+    align-items: center;
+    justify-content: flex-end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+    
+    .minimize{
+    background: green;    
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 5px;
+    }
+    
+    .close{
+    background: red;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 5px;
+    }
+    
+    textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid lightgray;
+    border-bottom-left-radius: 10px;
+    }
+
+    .sticky-content img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }

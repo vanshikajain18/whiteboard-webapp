@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHITEBOARD</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="tools-content">
+     <div class="tools">
+         <div class="tool active-tool" id="pencil"><img src="./resources-master/NewIcons/Black_Pencil.svg" alt="">
+         <div class="tool-options hide" id="pencil-options">
+            <input type="range" name="pencilSize" id="pencil-size" min="1" max="40" value="1">
+         <div class="pencil-colors">
+             <div class="black"></div>
+             <div class="blue"></div>
+             <div class="red"></div>
+             <div class="yellow"></div>
+         </div>
+        </div>
+    </div>
+         <div class="tool" id="eraser"><img src="./resources-master/NewIcons/Eraser.svg" alt="">
+            <div class="tool-options hide" id="eraser-options">
+            <input type="range" name="eraserSize" id="eraser-size" min="1" max="40" value="1">
+         </div>
+        </div>
+         <div class="tool" id="sticky"><img src="./resources-master/NewIcons/StickyNote.svg" alt=""> </div>
+         <div class="tool" id="photo"><img src="./resources-master/NewIcons/Photo.svg" alt="">
+         <input type="file" id="image-upload" style= "display: none ;" >
+        </div>
+         <div class="tool" id="undo"><img src="./resources-master/NewIcons/Undo.svg" alt=""></div>
+         <div class="tool" id=redo><img src="./resources-master/NewIcons/Redo.svg" alt=""></div>
+         <div class="tool" id="download"><img src="./resources-master/NewIcons/Download.svg" alt=""></div>
+        </div>
+    </div>
+    
+    <canvas id="canvas"> </canvas> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js" integrity="sha512-+l9L4lMTFNy3dEglQpprf7jQBhQsQ3/WvOnjaN/+/L4i0jOstgScV0q2TjfvRF4V+ZePMDuZYIQtg5T4MKr+MQ==" crossorigin="anonymous"></script>
+
+<script>
+    const socket= io.connect("http://localhost:3000") ;
+</script>
+<script src="./script.js"></script>
+<script src="./tools.js"></script>
+<script src="./sticky.js"></script>
+<script src="./util.js"></script>
+<script src="./socket.js"></script>
+
+</body>
+
+</html>
